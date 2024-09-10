@@ -4,112 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
-    <title>Formulário</title>
+    <title>Formulario</title>
 </head>
 <style>
-    body{background:linear-gradient(to left,white,red,blue);text-align: center;}
-    h1{color: white;font-style: oblique;font-family: Arial, Helvetica, sans-serif;font-size: 30px;text-shadow: 5px;}
-    h2{color: blue;font-size: 20px;font-style: italic;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-shadow: 5px;}
-    p{color: white;font-style: inherit;font-size: 15px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-shadow: 5px;}
-    fieldset{background-color: aqua;border: 6px solid red;border-radius: 10px 10px;box-shadow: 8px 8px 8px blue;margin: auto;width: 300px;padding: 5px;}
-    label{display: flex;flex-direction: column;font-size: 20px;color: black;font-style: oblique;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-shadow: 5px;padding: 5px;}
-    .color1{display: flex;flex-direction: column;align-items: center;justify-content: center;margin-left: 10px;background-color: white;border: 5px solid black;border-radius: 10px 10px;box-shadow: 8px 8px 8px red;width: 100px;margin: auto;}
-    .color2{background-color: rgb(118, 118, 152);border-radius: 10px 10px;border: 5px solid white;box-shadow: 8px 8px 8px red;padding: 10px;width: 300px;margin: auto;align-items: center;justify-content: center;display: flex;flex-direction: column;}
-    input{margin: auto;border-radius: 10px 10px;border: 5px solid red;background-color: bisque;text-align: left;width: 300px;font-size: 15px;color: black;text-shadow: 5px;padding: 5px;display: flex;flex-direction: column;align-items: center;justify-content: center;}
-    button{width: 100px;background-color: blue;color: white;font-size: 15px;text-shadow: 5px;border-radius: 10px 10px;border: 6px solid white;box-shadow: 6px 6px 6px black;margin: auto;}
-    textarea{height: 200px;width: 300px;margin: auto;background-color: beige;border: 6px solid red;font-size: 15px;color: black;text-shadow: 5px;border-radius: 10px 10px;}
-    select{width: 150px;border: 5px solid white;background-color: black;color: yellow;font-size: 15px;text-shadow: 5px;font-family: Arial, Helvetica, sans-serif;font-style: inherit;border-radius: 10px 10px;}
-    summary{margin: auto;width: 300px;border-radius: 10px 10px;}
+    body{background:linear-gradient(to left,white,blue,red);text-align: center;}
+    h1{font-size: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;color: black;text-shadow: 5px;}
+    h2{font-size: 20px;font-family: Arial, Helvetica, sans-serif;font-style: italic;color: blue;text-shadow: 5px;}
+    p{font-size: 15px;font-family: 'Times New Roman', Times, serif;font-style: initial;color: white;text-shadow: 5px;}
+    fieldset{background-color: aquamarine;border: 5px solid black;border-radius: 10px 10px;width: 300px;margin: auto;padding: 5px;}
+    label{display: flex;flex-direction: column;align-items: center;justify-content: center;font-size: 20px;color: black;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;text-shadow: 5px;}
+    .color1{display: flex;flex-direction: column;align-items: center;justify-content: center;width: 100px;margin: auto;background-color: blue;border: 6px solid red;border-radius: 10px 10px;box-shadow: 6px 6px 6px white;}
+    .color2{display: flex;flex-direction: column;align-items: center;justify-content: center;margin: auto;width: 100px;background-color: beige;border: 5px solid black;border-radius: 10px 10px;box-shadow: 6px 6px 6px red;}
+    input{width: 300px;border-radius: 10px 10px;border: 6px solid black;background-color: azure;text-align: left;font-size: 15px;color: black;margin: auto;}
+    select{background-color: black;color: yellow;border-radius: 10px 10px;border: 5px solid white;box-shadow: 6px 6px 6px white;width: 150px;margin: auto;}
+    textarea{background-color: beige;border: 6px solid red;width: 300px;height: 200px;margin: auto;border-radius: 10px 10px;}
+    button{width: 100px;margin: auto;border-radius: 10px 10px;border: 6px solid white;background-color: blue;color: white;box-shadow: 6px 6px 6px red;}
+    summary{width: 300px;border-radius: 10px 10px;margin: auto;}
 </style>
 <body>
-    <div id="text"><details><summary style="background-color: black;border: 6px solid white;box-shadow: 6px 6px 6px red;color: white;">Cadastro de <b style="color: red;">Brasileiros</b></summary>
-    <br>
+    <div id="text"><details><summary style="background-color: black;color: white;border: 6px solid white;box-shadow: 6px 6px 6px red;">Cadastro de <b style="color: red;">Brasileiros</b></summary>
     <form>
-        <fieldset>
-            <label for="Nome">Nome</label>
-            <input type="text" id="Nome" name="Nome" required>
-            <label for="Idade">Idade</label>
-            <input type="number" id="Idade" name="Idade" required>
-            <label for="RG">RG</label>
-            <input type="number" id="RG" name="RG" required>
-            <label for="CPF">CPF</label>
-            <input type="number" id="CPF" name="CPF" required>
-            <label for="Email">Email</label>
-            <input type="email" name="Email" id="Email" required>
-            <label for="Endereço">Endereço</label>
-            <input type="text" id="Endereço" name="Endereço" required>
-            <label for="Telefone">Telefone</label>
-            <input type="tel" id="Telefone" name="Telefone" required>
-            <label for="Nascimento">Nascimento</label>
-            <input type="date" id="Nascimento" name="Nascimento" required>
-            <br>
-            <br>
-            <h2><big><b style="color: red;">Estado</b> civil</big></h2>
-            <br>
-            <div class="color1">
-            <label for="Solteiro">Solteiro
-                <input type="checkbox" name="Estado" value="Solteiro" required>
-            </label>
-            <label for="Viúvo">Viúvo <input type="checkbox" name="Estado" value="Viúvo" required></label>
-            <label for="Separado">Separado
-                <input type="checkbox" name="Estado" value="Separado" required>
-            </label>
-            <label for="Divorciado">Divorciado
-            <input type="checkbox" name="Estado" value="Divorciado" required>
-            </label>
-            </div>
-            <br>
-            <br>
-            <h2><big>Sua <b style="color: red;">Experiência</b></big></h2>
-            <br>
-            <div class="color2">
-            <label for="Aprediz">Aprendiz</label>
-            <input type="radio" value="Aprediz" name="Experiência" required>
-            <label for="Novato">Novato</label>
-            <input type="radio" value="Novato" name="Experiência" required>
-            <label for="Jovem">Jovem</label>
-            <input type="radio" value="Jovem" name="Experiência" required>
-            <label for="Iniciante">Iniciante</label>
-            <input type="radio" value="Iniciante" name="Experiência" required>
-            <label for="Expert">Expert</label>
-            <input type="radio" value="Expert" name="Experiência" required>
-            <label for="Master">Master</label>
-            <input type="radio" value="Master" name="Experiência" required>
-            <label for="Experiente">Experiente</label>
-            <input type="radio" value="Experiente" name="Experiência" required>
-            </div>
-            <br>
-            <br>
-            <h2><big>Seu <b style="color: red;">Signo</b></big></h2>
-            <br>
-            <select name="Signo" id="Signo" required>
-                <option value="" selected disabled>Selecione</option>
-                <option value="Gêmeos">Gêmeos</option>
-                <option value="Libra">Libra</option>
-                <option value="Capricornio">Capricornio</option>
-                <option value="Leão">Leão</option>
-                <option value="Virgem">Virgem</option>
-                <option value="Aquario">Aquario</option>
-                <option value="Peixes">Peixes</option>
-                <option value="Cancêr">Cancêr</option>
-                <option value="Escorpião">Escorpião</option>
-                <option value="Sagitário">Sagitário</option>
-                <option value="Cancêr">Cancêr</option>
-                <option value="Touro">Touro</option>
-                <option value="Ofiúco">Ofiúco</option>
-            </select>
-            <br>
-            <br>
-            <h2><big>Fale sobre sua <b style="color: red;">Experiência</b></big></h2>
-            <br>
-            <textarea name="Experiência" id="Experiência" required rows="6"></textarea>
-            <br>
-            <button>Confirme</button>
-        </fieldset>
-    <p>Retorne para minha <a href="index.html" target="_blank" rel="external" style="background-color: beige;color: red;border-radius: 10px 10px;border: 5px solid black;">1ªPágina</a></p>    
+    <fieldset>
+        <label for="Nome">Nome</label>
+        <input type="text" id="Nome" name="Nome" required>
+        <label for="Idade">Idade</label>
+        <input type="number" id="Idade" name="Idade" required>
+        <label for="CPF">CPF</label>
+        <input type="number" id="CPF" name="CPF" required>
+        <label for="RG">RG</label>
+        <input type="number" id="RG" name="RG">
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="Email" required>
+        <label for="Telefone">Telefone</label>
+        <input type="tel" id="Telefone" name="Telefone" required>
+        <label for="Nascimento">Nascimento</label>
+        <input type="date" id="Nascimento" name="Nascimento" required>
+        <br>
+        <br>
+        <h2><big>Seu estado <b>Cívil</b></big></h2>
+        <br>
+        <div class="color1">
+        <label for="Solteiro">Solteiro</label>
+        <input type="checkbox" value="Solteiro" name="Cívil" required>
+        <label for="Separado">Separado</label>
+        <input type="checkbox" value="Separado" name="Cívil" required>
+        <label for="Divorciado">Divorciado</label>
+        <input type="checkbox" value="Divorciado" name="Cívil" required>
+        <label for="Viúvo">Viúvo</label>
+        <input type="checkbox" value="Viúvo" name="Cívil" required>
+        </div>
+        <br>
+        <br>
+        <h2>Seu nível de <b style="color: red;">Experiência</b>?</h2>
+        <br>
+        <div class="color2">
+        <label for="Aprendiz">Aprendiz</label>
+        <input type="radio" value="Aprendiz" name="Experiência" required>
+        <label for="Iniciante">Iniciante</label>
+        <input type="radio" value="Iniciante" name="Experiência" required>
+        <label for="Novato">Novato</label>
+        <input type="radio" value="Novato" name="Experiência" required>
+        <label for="Intermédiario">Intermédiario</label>
+        <input type="radio" name="Cívil" value="Intermédiario" required>
+        <label for="Experiente">Experiente</label>
+        <input type="radio" value="Experiente" name="Experiência" required>
+        <label for="Master">Master</label>
+        <input type="radio" name="Experiência" value="Master" required>
+        </div>
+        <br>
+        <br>
+        <h2><big>Qual o seu <b style="color: red;">Signo</b></big>?</h2>
+        <br>
+        <select name="Signo" id="Signo" required>
+            <option value="" selected disabled>Selecione</option>
+            <option value="Libra">Libra</option>
+            <option value="Gemêos">Gemêos</option>
+            <option value="Capricornio">Capricornio</option>
+            <option value="Sagitario">Sagitario</option>
+            <option value="Ofiúco">Ofiúco</option>
+            <option value="Escorpião">Escorpião</option>
+            <option value="Cancêr">Cancêr</option>
+            <option value="Aquario">Aquario</option>
+            <option value="Peixes">Peixes</option>
+            <option value="Virgem">Virgem</option>
+            <option value="Touro">Touro</option>
+            <option value="Áries">Áries</option>
+            <option value="Leão">Leão</option>
+        </select>
+        <br>
+        <br>
+        <h2><big>Me fale sobre sua <b style="color: red;">Experiência</b></big></h2>
+        <br>
+        <textarea name="Experiência" id="Experiência" required rows="6"></textarea>
+        <br>
+        <button>Confirme</button>
+    </fieldset>
+    <p>Volte para minha <a href="index.html" target="_blank" rel="external" style="background-color: bisque;color: red;border-radius: 10px 10px;">1ªPágina</a></p>
     </form>
-     </details></div>
-    <br>
+    </details></div>
     <script src="script.js"></script>
     <script>showAlert("Welcome my formulary")</script>
 </body>
